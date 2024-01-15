@@ -56,8 +56,8 @@ class StudentController extends Controller
         $request->validate([
             'lastname' => 'required|string|max:255',
             'firstname' => 'required|string|max:255',
-            'student_id' => 'required|string|unique:students, student_id|max:255',
-            'email' => 'required|string|unique:students, email|max:255',
+            'student_id' => 'required|string|unique:students,student_id|max:255',
+            'email' => 'required|string|unique:students,email|max:255',
             'phone' => 'required|string|max:255',
             'entry_year' => 'required|string|max:255',
             'dob' => 'required|date|max:255',
